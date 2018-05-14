@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*
+   My Personal Website - Final Project
+   
+   The Special Needs Village Backgrounds & Border Designs
+   Author: Annie Saenz
+   Class ID: ITSE 1411-37005
+   Student ID: 0729058
+
+   Filename: snv_design1.css
+
+*/
+
+/*HTML design styles*/
+
+html {
+	background-image: url(snv_nature2.png);
+	background-repeat: repeat;
+}
+
+/*Body design styles*/
+
+article h1 {
+	color: rgb(0, 0, 0);
+	text-shadow: rgb(255, 228, 225) 4px 4px 5px;
+}

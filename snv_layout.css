@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/*
+   My Personal Website - Final Project
+   
+   The Special Needs Village Layout Design
+   Author: Annie Saenz
+   Class ID: ITSE 1411-37005
+   Student ID: 0729058
+
+   Filename: snv_layout.css
+
+*/
+
+/*Body header layout sytles*/
+
+body > header {
+	width: 100%;
+	border-bottom: solid rgb(192, 192, 192);
+	box-sizing: border-box;
+}
+
+body > header > img {
+	display: block;
+	float: left;
+	width: 30%;
+}
+
+body > header > nav.horizontal li {
+	width: 20%;
+}
+
+
+/*Navigation layout styles*/
+
+nav ul {
+	display: block;
+	float: left;
+}
+
+nav.horizontal li {
+	background-color: rgb(250, 250, 210);
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+nav.horizontal a {
+	color: black;
+    display: block;
+	float: left;
+    font-size: 1em;
+    height: 25px; 
+    letter-spacing: 0.1em;   
+    line-height: 28px;
+	border: 0.5px solid rgb(250, 250, 210);
+	text-decoration: none;	     
+    /*width: 100%;*/
+	
+}
+
+body {
+	background-color: rgb(250, 250, 210);
+	background: radial-gradient(rgb(245, 245, 245), rgb(250, 250, 210), rgb(255, 228, 225));
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	min-width: 640px;
+	width: 90%;
+}
+
+article h1 {
+	color: rgb(0, 0, 0);
+	background-color: rgb(250, 250, 210); 
+	font-size: 45px;
+	/*line-height: 55px;*/
+	text-align: center;
+	font-family: Florence, cursive;
+	font-weight: bold;
+	margin:20px 0px 20px 20px;
+}
+
+article h2 {
+	color: rgb(0, 0, 0);
+	background-color: rgb(235, 177, 131);
+	font-size: 20px;
+	/*line-height: 55px;*/
+	text-align: center;
+	font-family: Florence, cursive;
+	font-weight: bold;
+	margin:20px 0px 20px 20px;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	color: black;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+	margin: 10px;
+	padding: 10px;
+	border: 10px;
+}
+
+
+/*Footer layout styles*/
+
+footer{
+	border-top: 2px solid rgb(255, 218, 185);
+	background-color: rgb(255, 218, 185);
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
