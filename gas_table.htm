@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      ITSE 2402
+	  Final Project
+	  DFW's Local Music Scene Connection Spot
+      Author: Gena Saenz
+      Date:   May 1, 2017
+
+      Filename: gas_table.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="keywords" content="Local Music, Fort Worth Bands, Dallas Bands, Music Venues, Deep Ellum, Rock, Metal, Jazz, Blues" >
+   <title>DFW's Local Music Scene Connection Spot</title>
+   <link rel="stylesheet" href="lmsConnectionSpot.css" />
+   <script src="gas_dropdown.js"></script>
+   
+</head>
+
+<body>
+    <header>
+	 <img src="guitar_header.jpg#headerImg" ALIGN="left" alt="The Local Music Scene Logo Image" />
+	   <h1>DFW's Local Music Scene Connection Spot</h1>
+	    <hr>
+		<nav class="horizontal">
+		  <ul>
+				<!-- Main Navigation -->
+				<li><a href="index.htm#lmsConnSpot" title="Link to The Local Music Scene Connection Spot's home page.">The LMS Connection Spot</a></li>
+				<li><a href="gas_login.htm#login" title="Link to the Member Login page.">Login</a></li>
+				<div class="dropdown">
+				  <a href="gas_band_venues.htm#band/venue" onclick="dropList()" class="dropbtn">Bands/Venues</a>
+				  <div id="myDropdown" class="dropdown-content">
+				   <ul>
+					<li><a href="gas_featured.htm#featured" title="Link to the Featured Band/Venue page.">Featured</a></li>
+					<li><a href="gas_band_venues.htm#band/venue">Bands/Venues</a></li>
+					<li><a href="gas_dallas_deep-ellum.htm#daldpell">Dallas/Deep-Ellum</a></li>
+					<li><a href="gas_ftworth_denton.htm#ftwdent">Fort Worth/Denton</a></li>
+				   </ul>
+				  </div>
+				</div>
+				<li><a href="gas_form.htm#form" title="Link to the Feedback Form page.">Feedback</a></li>
+				<li><a href="gas_table.htm#table" title="Link to the Staff Table page.">Directory</a></li>
+				<li><a href="gas_links.htm#links" title="Link to the Links page.">Links</a></li>
+				<li><a href="gas_sitemap.htm#sitemap" title="Link to the Links page.">Sitemap</a></li>
+				<li><a href="gas_design.htm#designdoc" title="Link to the Design Document.">Design Document</a></li>
+		  </ul>
+		</nav>
+	</header>
+	
+	<article>
+	    <h2>
+		 <em>DFW's Local Music Scene Connection Spot</em>
+		</h2>
+	<br>
+	  <table class="directory" border="1" cellpadding="5" cellspacing="0" ALIGN="center">
+	   <th class="staff" colspan="16" ALIGN="center">Staff Directory</th>
+	    <tr>
+		 <th class="staff" colspan="5">Name</th> 
+		 <th class="staff" colspan="3">Phone</th> 
+		 <th class="staff" colspan="8">Email</th>
+	   </tr>
+	   <tr>
+	    <td class="staff" colspan="5">Annie Saenz, Founder/CEO</td>
+		<td class="staff" colspan="3">817-308-6045</td>
+		<td class="staff" colspan="8">annie.saenz@dfwlmsconnectionspot.com</td>
+	   </tr>
+	   <tr>
+	    <td class="staff" colspan="5">Brook Enfield, Co-Founder</td>
+		<td class="staff" colspan="3">817-372-9662</td>
+		<td class="staff" colspan="8">brook.enfield@dfwlmsconnectionspot.com</td>
+	   </tr>
+	   <tr>
+	    <td class="staff" colspan="5">Jesse Gomez, IT/Security Manager</td>
+		<td class="staff" colspan="3">682-515-0206</td>
+		<td class="staff" colspan="8">jesse.gomez@dfwlmsconnectionspot.com</td>
+	   </tr>
+	   <tr>
+	    <td class="staff" colspan="5">Kathy Grant, Accountant</td>
+		<td class="staff" colspan="3">817-675-8506</td>
+		<td class="staff" colspan="8">kathy.grant@dfwlmsconnectionspot.com</td>
+	   </tr>
+	   <tr>
+	    <td class="staff" colspan="5">Thomas Enfield, Production Manager</td>
+		<td class="staff" colspan="3">817.555.6650</td>
+		<td class="staff" colspan="8">thomas.enfield@dfwlmsconnectionspot.com</td>
+	   </tr>
+	   <tr>
+	    <td class="staff" colspan="5">Tyrone Daniels, Marketing VP</td>
+		<td class="staff" colspan="3">817.555.6660</td>
+		<td class="staff" colspan="8">tyrone.daniels@dfwlmsconnectionspot.com</td>
+	   </tr>
+	 </table>
+	 <br>
+	 <img src="creative-graphic-bar.png" alt="Creative graphic divider bar image."  id="fancy" align="center"/>
+	 <p>&#10022;Feel free to contact any of us with questions, concerns, feedback or to
+	    get in touch with us about being featured, and/or partnering with us!&#10022;</p>
+  </article>	
+ </body>
+ 
+ <footer>
+	<hr style="height:2px;border-width:0;color:none;background-color:none">
+	&#10022; DFW's Local Music Scene Connection Spot &#x24B8; &#124; Last Update: May 3, 2017 <br>
+	Email: <a href="gas_form.htm"> 
+	 <img src="email_icon.png" alt="email icon image" title="This icon, when clicked takes the user to the Customer Feedback page." />
+	 <br>
+	 <a href="mailto:beheard@dfwlmsconnectionspot.com" title="Company email address link." id="email">beheard@dfwlmsconnectionspot.com</a>
+	 </a> 
+  <!-- Script to protect email address from email harvesting -->
+  <script>
+	var cs = "beheard";
+	var symbol = "@";
+	var domain = "dfwlmsconnectionspot";
+	var dot = ".";
+	var end = "com";
+    document.write("<a href=" + "mail" + "to:" + cs + symbol + domain
+     + dot + end + ">" + "</a>");
+  </script>	 
+ </footer>

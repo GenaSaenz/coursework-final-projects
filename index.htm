@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      ITSE 2402
+	  Final Project
+	  DFW's Local Music Scene Connection Spot
+      Author: Gena Saenz
+      Date:   April 23, 2017
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="keywords" content="Local Music, Fort Worth Bands, Dallas Bands, Music Venues, Deep Ellum, Rock, Metal, Jazz, Blues" >
+   <title>DFW's Local Music Scene Connection Spot</title>
+   <link rel="stylesheet" href="lmsConnectionSpot.css" />
+   
+</head>
+
+<body>
+    <header>
+	 <img src="guitar_header.jpg#headerImg" ALIGN="left" alt="The Local Music Scene Logo Image" />
+	   <h1>DFW's Local Music Scene Connection Spot</h1>
+	    <hr>
+		<nav class="horizontal">
+		   <ul>
+				<!-- Main Navigation -->
+				<li><a href="index.htm#lmsConnSpot" title="Link to The Local Music Scene Connection Spot's home page.">The LMS Connection Spot</a></li>
+				<li><a href="gas_login.htm#login" title="Link to the Member Login page.">Login</a></li>
+				<div class="dropdown">
+				  <a href="gas_band_venues.htm#band/venue" onclick="dropList()" class="dropbtn">Bands/Venues</a>
+				  <div id="myDropdown" class="dropdown-content">
+				   <ul>
+					<li><a href="gas_featured.htm#featured" title="Link to the Featured Band/Venue page.">Featured</a></li>
+					<li><a href="gas_band_venues.htm#band/venue">Bands/Venues</a></li>
+					<li><a href="gas_dallas_deep-ellum.htm#daldpell">Dallas/Deep-Ellum</a></li>
+					<li><a href="gas_ftworth_denton.htm#ftwdent">Fort Worth/Denton</a></li>
+				   </ul>
+				  </div>
+				</div>
+				<li><a href="gas_form.htm#form" title="Link to the Feedback Form page.">Feedback</a></li>
+				<li><a href="gas_table.htm#table" title="Link to the Staff Table page.">Directory</a></li>
+				<li><a href="gas_links.htm#links" title="Link to the Links page.">Links</a></li>
+				<li><a href="gas_sitemap.htm#sitemap" title="Link to the Links page.">Sitemap</a></li>
+				<li><a href="gas_design.htm#designdoc" title="Link to the Design Document.">Design Document</a></li>
+		  </ul>
+		</nav>
+	</header>
+	
+		<!-- Main page content -->
+	 <article>
+	    <h2>
+		 <em> DFW's Local Music Scene Connection Spot </em>
+		</h2>
+		 <!-- Left Column -->
+		 <div class="col-1-2">
+		<h3>Our Mission Statement</h3>
+		  <blockquote>
+			&#34;Connecting music lovers and supporters with the best local bands and venues in DFW, while
+			 connecting bands with venues and helping them grow their fan base. All for the love of Music!&#34;
+		  </blockquote>
+			<br>
+		<h3>Welcome to Our Community!</h3>
+		<p>We have all had that thought or conversation about making plans for the evening or weekend and trying 
+		 to figure out the best spots to go hear live, local music and possibly venturing to unknown venues. This 
+		 is where we come in. You can find local band info, events and venues all in one place for quick and easy
+		 planning. We even have links to show where some of the best parking in Deep Ellum is. You can join our 
+		 community and receive email notification of upcoming events in your selected areas and/or venues, provide
+		 feedback and even pass on information about local bands/artists and venues that you feel should be 
+		 featured on our page. Bands/artists and venues can also become members and provide information to be 
+		 featured regarding events, pricing, upcoming tours, and links to their website. </p>
+		 <br>
+		 <h3>Come Visit Us!</h3>
+		 <p>We welcome visitors to stop by and see what we do and chat with us!</p>
+		<address align="center">
+			Fort Worth Location:
+			<br>
+			 401 Carroll St
+			<br>
+			Fort Worth, TX 76107
+		</address>
+		<p>You can also find us during one of our many visits at one of the Tarrant County College Campuses.
+		 Come by and say hi, give us feedback, suggest a band or venue that you think should be featured on
+		 our page and even win a pair of tickets to one of our monthly featured bands/artists! For more 
+		 information, including directions to each campus visit the TCCD district home page by clicking this link:
+		 <a href="http://www.tccd.edu/" title="Link to the TCCD district home page." id="tccd">TCCD Home Page</a></p>	 
+		</div>
+		 <!-- Right Column -->
+		  <div class="col-1-2">
+		<h3>All for the Love of Music!</h3>
+		<p>We are proud to support our local music scenes and venues! We want to help you find events for bands
+		 you are already supporting and new bands/artists that you might not have found otherwise. We always 
+		 appreciate feedback regarding shows you attend and pictures you share are often featured to give our 
+		 community the full experience. We provide information across a multitude of genres so there is something
+		 for everyone. We cannot promise you won't have to make hard choices on which awesome show to attend but 
+		 we can promise that you will have plenty to choose from!</p>	
+				 <!--Countdown Clock section -->
+		<h2 class="clock" ALIGN="center">&#10022;Our Live & Local Show is Coming in 90 Days!&#10022;</h2>
+		<br>
+		<table class="countdownContainer" ALIGN="center">
+		  <tr class="info">
+		   <td colspan="4">DFW's LMS Connection Live & Local Show</tr>
+		  </tr>
+		  <tr class="info">
+			<td id="days">00</td>
+			<td id="hours">00</td>
+			<td id="minutes">00</td>
+			<td id="seconds">00</td>
+		 </tr>
+		 <tr>
+		   <td>Days</td>
+		   <td>Hours</td>
+		   <td>Minutes</td>
+		   <td>Seconds</td>
+		 </tr>
+		</table>
+		 <script>
+			function countdown(){
+				var now = new Date();
+				var eventDate = new Date(2018, 8, 15);
+
+				var currentTiime = now.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTiime;
+
+				var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+
+				h %= 24;
+				m %= 60;
+				s %= 60;
+
+				h = (h < 10) ? "0" + h : h;
+				m = (m < 10) ? "0" + m : m;
+				s = (s < 10) ? "0" + s : s;
+
+				document.getElementById("days").textContent = d;
+				document.getElementById("days").innerText = d;
+
+				document.getElementById("hours").textContent = h;
+				document.getElementById("minutes").textContent = m;
+				document.getElementById("seconds").textContent = s;
+
+				setTimeout(countdown, 1000);
+			}
+
+			countdown();
+	 </script>
+    <br>
+	<br>
+	  <p>We are excited to announce that we will be live streaming our very own
+	   Live & Local show! Every Sunday night at 7pm CST we will be talking with
+	   various local bands, artists and venue reps. This will be an amazing 
+	   opportunity to get to know new bands, artists and venues and add things
+	   to your list of plans for the upcoming week. We will also announce the 
+	   next week's guest so that you guys can send us your "need to know" 
+	   questions, stellar reviews and shoutouts and even enter to win a chance
+	   to come in to the studio for a meet and greet along with 2 tickets to the
+	   next local show or passes into the venue! You can keep track with our 
+	   countdown clock and anxiously await August 6th with us.</p>
+		<p>*Our website is best viewed using Chrome, IE9 and Safari. The best resolutions are 1024×768 
+		  or higher for laptops, 750 x 1334 to 1440 x 2560 for smartphones, 800 x 1280 to 
+		  2048 x 2783 for tablets and iPads.
+		  (All resolutions listed are in pixels.)*</p>
+	  </div>
+	<br>
+	<br>
+	<p id="copyright" align="center">&copy; DFW's Local Music Scene Connection Spot 2017
+		<br>
+		This website is owned and published by DFW's Local Music Scene Connection Spot.
+		All graphics, including images, are subject to copyright laws and
+		cannot and should not be used without explicit permission from 
+		DFW's Local Music Scene Connection Spot, the bands/artists and/or venues. 
+		<a href="gas_design.htm" title="Link to website design document"/ id="design">Website Design Document</a>
+	</p>
+	</article>
+   </body> 
+   <footer>
+	<hr style="height:2px;border-width:0;color:none;background-color:none">
+	&#10022; DFW's Local Music Scene Connection Spot &#x24B8; &#124; Last Update: May 3, 2017 <br>
+	Email: <a href="gas_form.htm"> 
+	 <img src="email_icon.png" alt="email icon image" title="This icon, when clicked takes the user to the Customer Feedback page." />
+	 <br>
+	 <a href="mailto:beheard@dfwlmsconnectionspot.com" title="Company email address link." id="email">beheard@dfwlmsconnectionspot.com</a>
+	 </a> 
+  <!-- Script to protect email address from email harvesting -->
+  <script>
+	var cs = "beheard";
+	var symbol = "@";
+	var domain = "dfwlmsconnectionspot";
+	var dot = ".";
+	var end = "com";
+    document.write("<a href=" + "mail" + "to:" + cs + symbol + domain
+     + dot + end + ">" + "</a>");
+  </script>	 
+ </footer>
+ 

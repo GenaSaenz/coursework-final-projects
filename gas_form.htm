@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      ITSE 2402
+	  Lab 2
+	  Final Project
+	  DFW's Local Music Scene Connection Spot
+      Author: Gena Saenz
+      Date:   April 28, 2017
+
+      Filename: gas_form.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="keywords" content="Local Music, Fort Worth Bands, Dallas Bands, Music Venues, Deep Ellum, Rock, Metal, Jazz, Blues" >
+   <title>DFW's Local Music Scene Connection Spot</title>
+   <link rel="stylesheet" href="lmsConnectionSpot.css" />
+    
+	<script src="gas_dropdown.js"></script>
+	  <script>
+	   validateForm();
+	  </script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	  <script>
+	    $(document).ready(function() {
+	        $('myForm').submit(function() {
+			    alert("Thank you for your feedback! Your form has been submitted.")
+				});
+			});
+	    </script>
+</head>
+
+<body>
+    <header>
+	 <img src="guitar_header.jpg#headerImg" ALIGN="left" alt="The Local Music Scene Logo Image" />
+	   <h1>DFW's Local Music Scene Connection Spot</h1>
+	    <hr>
+		<nav class="horizontal">
+		   <ul>
+				<!-- Main Navigation -->
+				<li><a href="index.htm#lmsConnSpot" title="Link to The Local Music Scene Connection Spot's home page.">The LMS Connection Spot</a></li>
+				<li><a href="gas_login.htm#login" title="Link to the Member Login page.">Login</a></li>
+				<div class="dropdown">
+				  <a href="gas_band_venues.htm#band/venue" onclick="dropList()" class="dropbtn">Bands/Venues</a>
+				  <div id="myDropdown" class="dropdown-content">
+				   <ul>
+					<li><a href="gas_featured.htm#featured" title="Link to the Featured Band/Venue page.">Featured</a></li>
+					<li><a href="gas_band_venues.htm#band/venue">Bands/Venues</a></li>
+					<li><a href="gas_dallas_deep-ellum.htm#daldpell">Dallas/Deep-Ellum</a></li>
+					<li><a href="gas_ftworth_denton.htm#ftwdent">Fort Worth/Denton</a></li>
+				   </ul>
+				  </div>
+				</div>
+				<li><a href="gas_form.htm#form" title="Link to the Feedback Form page.">Feedback</a></li>
+				<li><a href="gas_table.htm#table" title="Link to the Staff Table page.">Directory</a></li>
+				<li><a href="gas_links.htm#links" title="Link to the Links page.">Links</a></li>
+				<li><a href="gas_sitemap.htm#sitemap" title="Link to the Links page.">Sitemap</a></li>
+				<li><a href="gas_design.htm#designdoc" title="Link to the Design Document.">Design Document</a></li>
+		  </ul>
+		</nav>
+	</header>
+	
+	<!-- Main page content -->		
+	<article>
+      <h2>
+	    &#9834; <em>Give Us Your Feedback</em>  &#9834;
+	  </h2>
+	</article>
+	 <div id="myForm" align="center">
+      <form action="">
+        
+          <label for="nameinput">
+            Name:
+		  </label>
+		  <br>
+            <input type="text" id="nameinput" name="name" size="45" placeholder="First and Last Name" required="required" />
+		  <br>
+		  <label for="addressinput">
+			Address:
+		  </label>
+		  <br>
+			 <input type="text" id="addressinput" name="address" size="45" placeholder="1234 My Street" />
+		  <br>
+		  <label for="citystatezip">
+			City, State, Zip Code:
+		  </label>
+		  <br>
+			 <input type="text" id="citystatezip" name="citystatezip" size="50" placeholder="City, State and Zip Code" />
+		 <br>
+		  <label for="phoneinput">
+            Phone:
+		  </label>
+		  <br>
+            <input type="text" id="phoneinput" name="phone" maxlength="12" placeholder="123-456-7890" required="required" />
+		  <br>
+		  <label for="emailinput">
+            Email:
+		  </label>
+		  <br>
+            <input type="text" id="emailinput" name="email" size="45" placeholder="emailaddress@example.com" required="required" />
+		  <br>
+		  
+		 <label for="looking">
+			What are you searching for?
+		 </label>
+		 <br>
+			<label for="band/artist">
+			 <input type="radio" id="band/artist" name="Band/Artist" />
+			 Band/Artist
+			</label>
+			<label for="venue">
+			 <input type="radio" id="venue" name="Venue" />
+			 Venue
+			</label>
+			<label for="fun">
+			 <input type="radio" id="fun" name="Something New" />
+			 Something New
+			</label>
+			<label for="promotion">
+			 <input type="radio" id="promotion" name="Website Promotion/Feature" />
+			 Website Promotion/Feature
+			</label>
+			<label for="networking">
+			 <input type="radio" id="networking" name="Networking Opportunities" />
+			 Networking Opportunities
+			</label>
+		<br>
+		<br>
+		<label for="hearaboutus">
+		 How did you hear about us :
+		 <select name="decision">
+		 <option>
+		 <option>Google Search
+		 <option>Band Website
+		 <option>Venue Website
+		 <option>Friend or Family
+		 <option>Artist/Band
+		 <option>Other 
+		</select>
+		<label for="forOther" /> 
+		  For Other:
+		</label>
+		 <input type="text" id="other" size="35" name="For Other" />
+		<br>
+        <br>
+		<label for="enewsleter" />
+			Electronic Newsleter:
+		</label>
+		<br>
+		<input type="checkbox" name="enewsletter" value="Yes" /> 
+			Yes, I would like to subscribe to the electronic newsletter.
+		<p>&#42;Email addresses will <strong>not</strong> be sold or given out in <strong>any</strong> form!&#42;</p>
+		<br>
+		
+		<label for="featured" />
+			Website Promotion:
+		</label>
+		<br>
+		<input type="checkbox" id="featured" name="featured" value="Yes" />
+			Yes, I/we would like to be like to be featured on the website.
+		<br>
+
+		<!-- Text area for customer suggestions/questions -->
+	   <label for="suggestions">
+			Suggestions:
+	   </label>
+		<br>
+			 <textarea rows="15" maxlength="500"
+			  input type="text" id="suggestions" name="suggestions" placeholder="Please provide questions and/or comments!" />
+			 </textarea>
+		 <br>
+		 <!-- Form sumbit and reset buttons -->
+		 <button type="submit" id="submitbutton" value="Submit" title="This button submits the feedback form.">
+			Send Us Your Feedback
+			</button>
+		  <button type="reset" id="resetbutton" value="Reset" title="This button resets the form to it's original state.">
+			Clear Form
+		  </button>  
+     </form>
+   </div>	
+  </article>
+
+	<script src="gas_form.js"></script>
+</body>
+	<br>
+	<br>
+<footer>
+	<hr style="height:2px;border-width:0;color:none;background-color:none">
+	&#10022; DFW's Local Music Scene Connection Spot &#x24B8; &#124; Last Update: May 3, 2017 <br>
+	Email: <a href="gas_form.htm"> 
+	 <img src="email_icon.png" alt="email icon image" title="This icon, when clicked takes the user to the Customer Feedback page." />
+	 <br>
+	 <a href="mailto:beheard@dfwlmsconnectionspot.com" title="Company email address link." id="email">beheard@dfwlmsconnectionspot.com</a>
+	 </a> 
+  <!-- Script to protect email address from email harvesting -->
+  <script>
+	var cs = "beheard";
+	var symbol = "@";
+	var domain = "dfwlmsconnectionspot";
+	var dot = ".";
+	var end = "com";
+    document.write("<a href=" + "mail" + "to:" + cs + symbol + domain
+     + dot + end + ">" + "</a>");
+  </script>	 
+ </footer>

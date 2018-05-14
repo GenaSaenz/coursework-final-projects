@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      ITSE 2402
+	  Lab 4
+	  DFW's Local Music Scene Connection Spot
+      Author: Gena Saenz
+      Date:   April 28, 2017
+
+      Filename: gas_login.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="keywords" content="Local Music, Fort Worth Bands, Dallas Bands, Music Venues, Deep Ellum, Rock, Metal, Jazz, Blues" >
+   <title>DFW's Local Music Scene Connection Spot</title>
+   <link rel="stylesheet" href="lmsConnectionSpot.css" />
+   <script src="gas_dropdown.js"></script>
+   <script src="gas_login_random.js"></script>
+   <script>
+      function showImg() {
+      /*
+         The showImg() function displays a random image from the
+         0.jpg through 9.jpg files. The random image is designed
+         to thwart hackers attempting to enter the library records
+         database by requiring visual confirmation.
+      */
+
+         var imgNumber = randomInteger(9); // Return a random number from 0 to 9
+         document.write("<img src='"+imgNumber+".jpg' alt='' />");
+      }
+   </script>
+
+</head>
+
+<body>
+    <header>
+	 <img src="guitar_header.jpg#headerImg" ALIGN="left" alt="The Local Music Scene Logo Image" />
+	   <h1>DFW's Local Music Scene Connection Spot</h1>
+	    <hr>
+		<nav class="horizontal">
+		   <ul>
+				<!-- Main Navigation -->
+				<li><a href="index.htm#lmsConnSpot" title="Link to The Local Music Scene Connection Spot's home page.">The LMS Connection Spot</a></li>
+				<li><a href="gas_login.htm#login" title="Link to the Member Login page.">Login</a></li>
+				<div class="dropdown">
+				  <a href="gas_band_venues.htm#band/venue" onclick="dropList()" class="dropbtn">Bands/Venues</a>
+				  <div id="myDropdown" class="dropdown-content">
+				   <ul>
+					<li><a href="gas_featured.htm#featured" title="Link to the Featured Band/Venue page.">Featured</a></li>
+					<li><a href="gas_band_venues.htm#band/venue">Bands/Venues</a></li>
+					<li><a href="gas_dallas_deep-ellum.htm#daldpell">Dallas/Deep-Ellum</a></li>
+					<li><a href="gas_ftworth_denton.htm#ftwdent">Fort Worth/Denton</a></li>
+				   </ul>
+				  </div>
+				</div>
+				<li><a href="gas_form.htm#form" title="Link to the Feedback Form page.">Feedback</a></li>
+				<li><a href="gas_table.htm#table" title="Link to the Staff Table page.">Directory</a></li>
+				<li><a href="gas_links.htm#links" title="Link to the Links page.">Links</a></li>
+				<li><a href="gas_sitemap.htm#sitemap" title="Link to the Links page.">Sitemap</a></li>
+				<li><a href="gas_design.htm#designdoc" title="Link to the Design Document.">Design Document</a></li>
+		  </ul>
+		</nav>
+	</header>
+	
+	<!-- Right page section for main page content -->
+	<article>
+	 <h2>
+		 <em>Member Login</em>
+	 </h2>
+	  <p id="please" ALIGN="center">*Please enter your username and password.*</p>
+   <table class="login" border="1" cellpadding="5" cellspacing="1" ALIGN="center">
+    <tr>
+     <th class="login">Username</th>
+      <td class="login"><input size="20"/></td>
+    </tr>
+    <tr>
+     <th class="login">Password</th>
+      <td class="login"><input size="20"/></td>
+    </tr>
+    <tr>
+     <td class="login">Please enter the numbers from the security check displayed below.</td>
+     <td class="login"><input size="6"/></td>
+     <br>
+    <tr>
+     <td colspan="2" class="center">
+      <input type="button" value="Login Now"/>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2" class="center">
+       <script>
+         showImg();
+         showImg();
+         showImg();
+         showImg();
+         showImg();
+      </script>
+     </td>
+    </tr>
+   </table>
+	 </div>	
+	<br>
+  </article>	
+ </body>
+	
+<footer>
+	<hr style="height:2px;border-width:0;color:none;background-color:none">
+	&#10022; DFW's Local Music Scene Connection Spot &#x24B8; &#124; Last Update: May 3, 2017 <br>
+	Email: <a href="gas_form.htm"> 
+	 <img src="email_icon.png" alt="email icon image" title="This icon, when clicked takes the user to the Customer Feedback page." />
+	 <br>
+	 <a href="mailto:beheard@dfwlmsconnectionspot.com" title="Company email address link." id="email">beheard@dfwlmsconnectionspot.com</a>
+	 </a> 
+  <!-- Script to protect email address from email harvesting -->
+  <script>
+	var cs = "beheard";
+	var symbol = "@";
+	var domain = "dfwlmsconnectionspot";
+	var dot = ".";
+	var end = "com";
+    document.write("<a href=" + "mail" + "to:" + cs + symbol + domain
+     + dot + end + ">" + "</a>");
+  </script>	 
+ </footer>

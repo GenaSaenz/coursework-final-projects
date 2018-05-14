@@ -1,0 +1,615 @@
+@charset "utf-8";
+
+/*
+   ITSE 2402
+   Final Project 
+   The Local Music Scene Connection Spot
+   Author: Gena Saenz
+   Date: April 23, 2017
+   
+   Filename: chadeStyles.css
+
+*/
+
+/*HTML Styles*/
+
+@media (min-width: 150px) and (max-width: 1024px) {
+	width: auto;
+}
+
+header {
+   background:  #c4c4c4;
+   /*box-shadow: #cac7c6 20px 10px, #cac7c6 -20px 10px;*/
+   width: 99%;
+   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+   color: #000000;
+   text-shadow: 10px 10px 15px #793939;
+   font-size: 20px;
+   text-align: center;
+   border: solid;
+   border-width: 4px;
+   border-color: #000000;
+}
+
+header#headerImg {
+	float: left;
+}
+
+hr {
+ width: 99%;
+ height: 5px;
+ margin: auto;
+ background-color: #793939;
+}
+
+/*Main navigation styles in Header section*/
+header > nav.horizontal {
+   width: 100%;
+   font-size: 16px;
+}
+
+nav.horizontal ul {
+	text-align: center;
+	list-style-type: none;	
+}
+
+nav.horizontal ul li {
+	display: inline-block;
+	padding: 10px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;	
+}
+
+nav.horizontal ul li a {
+	color: #000000;
+	text-decoration: none;
+	text-shadow: 1px 1px 3px #793939;
+}
+
+nav.horizontal a:visited {
+	color: rgba(91,114,134,1);	
+}
+
+nav.horizontal a:hover {
+	color: rgb(97,131,161,1);
+	text-decoration: underline;
+}
+
+nav.horizontal a:active {
+	color: rgba(27,147,252,1);
+}
+
+/*General Body Styles*/
+html {
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	font-family: Arial, Helvetica, sans-serif;
+	border: solid, 3px, #000000;
+	background: linear-gradient(to right, #999999 0%, #999999 51%, #575757 94%, #000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+	overflow: auto;
+}
+body {
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	font-family: Arial, Helvetica, sans-serif;
+	border: solid, 3px, #000000;
+	margin: 0 0 0 0;
+	padding:0 0 0 0;
+	background: #E7E1D9;
+	box-shadow:  #793939 15px 0px 15px,
+				 #793939 -15px 0px 15px;
+	border-left: solid 3px #000000;
+	border-right: solid 3px #000000;
+	overflow: auto;
+}
+
+/*Div Styles*/
+div {
+	box-sizing: border-box;-moz-box-sizing: border-box;
+	height: 100%;
+	display: inline-block;
+}
+
+/* Grid Columns Styles */
+div[class^="col-"] {
+	float: left;
+}
+
+/*Used for both Left and Right Columns*/
+div.col-1-2 {
+	width: 50%;
+	overflow: auto;
+}
+
+div.col-1-2 img {
+	display: block;
+	clear: left;
+	float: left;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	color: black;
+	-webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; 
+	margin: 20px;
+	padding: 20px;
+	border: 20px;
+}
+
+/*Used for Page Titles in the body section*/
+h2 {
+	display: block;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.8em;
+	line-height: 2em;
+	text-shadow: 1px 1px 2px #793939;
+	text-align: center;
+}
+
+h3 {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+h4 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 0.875em;
+	line-height: 1em;
+	text-align: center;
+}
+
+blockquote {
+	display: block;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+#copyright {
+	clear: both;
+	display: block;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	line-height: 1em;
+	
+}
+
+/*Page Link Styles*/
+#tccd, #email, #design, #links, #definition{
+	color: #000000;
+	text-decoration: none;
+	text-shadow: 1px 1px 3px #793939;
+}
+
+/*Current Date & Time Styles*/
+#date {
+	float: right;
+	border: solid 1px #4372AA;
+	background: rgb(247, 240, 224);
+	box-shadow: 0 0 2px 2px #cfcfc4;
+	width: 35%;
+	text-shadow: 1px 1px 1px rgba(73,155,234,1);
+}
+
+/*Member Login Styles*/
+
+table.login {
+ background: white;
+ border: solid 2px #000000;
+ border-collapse: collapse;
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ width: 60%;
+}
+
+th.login {
+ font-family: Tahoma, Geneva, sans-serif;
+ text-decoration: underline;
+ color: black;
+ font-weight: normal;
+ background-color: #BF9FA5;
+ letter-spacing: 3px;
+ text-align: center;
+}
+
+td.login {
+ vertical-align: top;
+ background-color: white;
+}
+
+td.center {
+ text-align: center;
+}
+
+/*Feedback Form Styles*/
+#myForm {
+	max-height: 1024px;
+	max-width: 1024px;
+	min-width: 150px; 
+	display: inline-block;
+	text-align: left;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	overflow: auto;
+	border: solid 2px #000000;
+	background: linear-gradient(to right, rgba(196,196,196,1) 0%, rgba(214,214,214,1) 53%, rgba(240,240,240,1) 100%);
+	box-shadow: 1px 1px #793939;
+	padding: 15px;
+	margin-bottom: 10px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+label {
+	 padding: 10px; 
+     margin-bottom: 10px;
+}
+
+
+input {
+    margin-bottom: 10px;
+}
+
+textarea {
+	padding: 10px;
+    display: block;
+    width: 650px;
+    margin-bottom: 10px;
+	text-align: left;
+	
+}
+
+radio {
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+select {
+	margin-bottom: 15px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+#emailinput {
+	margin-bottom: 15px;
+}
+
+#enewsleter {
+	margin-bottom: 20px;
+}
+
+#featured {
+	margin-bottom: 25px;
+}
+
+#submitbutton {
+	background-color: #BF9FA5;
+	border: solid #000000;
+	border: collapse;
+	color: black;
+	padding: 15px 25px;
+	display: inline-block;
+	float: right;
+	font-size: 16px;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	text-align: center;
+}
+
+#resetbutton {
+	background-color: #BF9FA5;
+	border: solid #000000;
+	border: collapse;
+	color: black;
+	padding: 15px 25px;
+	display: inline-block;
+	float: left;
+	font-size: 16px;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	text-align: center;
+}
+
+/*Dropdown Link Styles*/
+
+.dropbtn {
+    background-color: #c4c4c4;
+    color: #000000;
+	text-shadow:1px 1px 3px #793939; 
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(97,131,161,1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	background-color: #DBDBDB;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	text-align: left;
+	height: 200px;
+    background-color: #DBDBDB;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+	text-shadow:1px 1px 3px #793939;
+	background-color: #DBDBDB;
+    padding: 2px 2px;
+    text-decoration: none;
+    display: block;
+	
+}
+
+.dropdown a:hover {
+	background-color: rgb(97,131,161,1);
+}
+
+.show {
+	display:block;
+}
+
+/*Staff Table Styles*/
+
+table.directory {
+ background: white;
+ border: solid 2px #000000;
+ border-collapse: collapse;
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ width: auto;
+}
+
+th.staff{
+ font-family: Tahoma, Geneva, sans-serif;
+ color: black;
+ font-weight: normal;
+ background-color: #ad5151;
+ letter-spacing: 3px;
+ text-align: center;
+}
+
+ td.staff {
+ vertical-align: top;
+ background-color: #DBDBDB;
+}
+
+#fancy {
+	margin-left: 20%;
+	margin-right: 30%;
+	background-color: #E7E1D9;
+}
+
+/*Countdown Section Styles*/
+.countdownContainer {
+	margin-top: 30px;
+	width: 30%;
+	height: 75px;
+	text-align: center;
+	background: rgb(247, 240, 224);
+	border: 2px solid #000000;
+	padding: 10px;
+	box-shadow:  #793939 0px 0px 5px 3px;
+}
+
+.info {
+	font-size: 12px;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+#days, #hours, #minutes, #seconds {
+	font-size: 12px;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	color: #000000;
+	text-shadow: 1px 1px 3px #793939;
+}
+
+h2.clock {
+	display: block;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+/*Band/Venues pages List Styles*/
+#daldpellm, #ftwdent {
+	list-style-type: none;
+	text-align: left;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/*Target Link Dropdown on Links Page Styles*/
+
+.targetdropbtn {
+    background-color: #c4c4c4;
+    color: #000000;
+	text-shadow:1px 1px 3px #793939; 
+    padding: 25px;
+    font-size: 16px;
+    border: solid 1px #000000;
+    cursor: pointer;
+	margin-left: 15px;
+}
+
+.targetdropbtn:hover, .targetdropbtn:focus {
+    background-color: rgb(97,131,161,1);
+}
+
+.targetdropdown {
+    position: relative;
+    display: inline-block;
+	background-color: #DBDBDB;
+}
+
+.targetdropdown-content {
+    display: none;
+    position: absolute;
+	text-align: left;
+	height: 200px;
+    background-color: #DBDBDB;
+	border: solid 1px #000000;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.targetdropdown-content a {
+    color: #000000;
+	text-shadow:1px 1px 3px #793939;
+	font-size: 14px;
+	background-color: #DBDBDB;
+    padding: 7px 7px;
+    text-decoration: none;
+    display: block;
+	
+}
+
+.targetdropdown a:hover {
+	background-color: rgb(97,131,161,1);
+}
+
+.show {
+	display:block;
+}
+
+/*Links Page Styles*/
+h4.linkspg {
+	text-align: left;
+	color: #793939;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	padding-left: 5px;
+}
+
+h3#dal, h3#ftw, h3#parking, h3#bands {
+	color: #000000;
+	text-shadow:1px 1px 3px #793939;
+}
+
+p#linkp {
+	text-align: left;
+	padding: 5px;
+}
+
+p#linkp a {
+	color: #000000;
+	text-shadow:1px 1px 3px #793939;
+}
+
+#linkpic {
+	margin-left: 25px;
+}
+
+/*Sitemap Styles*/
+table.sitemap {
+ background: #DBDBDB;
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ width: 90%;
+ border-bottom: solid 1px black;
+ border-left: solid 1px black;
+ border-right: solid 1px black;
+ border-top: solid 1px black;
+ box-shadow: 0 0 5px 3px #ad5151;
+
+}
+
+th.maplist {
+ vertical-align: top;
+ border-bottom: solid 1px black;
+ color: black;
+ font-weight: normal;
+ font-size: 14px;
+ letter-spacing: 2px;
+ text-align: center;
+ background: #ad5151;
+}
+
+th.maplist1 {
+	border: solid 1px #000000;
+	background-color: #ad5151;
+}
+
+td.maplist {
+ vertical-align: top;
+ text-decoration: none;
+ font-size: 1em;
+ list-style: none;
+ background: rgb(247, 240, 224);
+}
+
+/*Current Date & Time Styles*/
+#date {
+	float: right;
+	width: 35%;
+	color: #000000;
+	text-shadow:1px 1px 3px #793939;
+	background: rgb(247, 240, 224);
+	border: 2px solid #000000;
+	padding: 10px;
+	box-shadow:  #793939 0px 0px 5px 3px;
+}
+
+/*Footer Styles*/
+footer {
+	clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	line-height: 1em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Design Document Styles*/
+body#doc {
+	background-image: url("graphic-bckgrnd.jpg");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+h2#doc {
+	font-size: 1.1 em;
+	text-align: center;
+	color: #000000;
+	text-shadow:1px 1px 3px #793939;
+}
+
+h3#doc {
+	font-size: 1em;
+	text-align: center;
+	color: #ad5151;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+h4#doc {
+	color: #793939;
+	text-align: left;
+	padding: 5px;
+	
+}
+
